@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(50, 0, 100);
+}
+.header{
+    background-color: rgb(0, 0, 0);
+}
+img{
+    margin: 10px;
+}
+.header li{
+    display: block;
+    padding: 20px;
+    float: left;
+    border-radius: 10px;
+}
+.header ul{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+    overflow: hidden;
+}
+.header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.header li:hover{
+    background: linear-gradient(#ff00ff 10%,#9900ff 30%,#002fff 100%);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.hotels-row{
+    float: left;
+}
+.hotels-row img{
+height: 300px;
+width: 300px;
+border-radius: 50px;
+}
+.hotels-row h1{
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+}
+.hotels-row p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+fieldset{
+    height: 400px;
+    width: 300px;
+    margin: 150px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+}
+fieldset h2{
+    color: white;
+    text-align: center;
+}
+fieldset p{
+    color: white;
+    text-align: center;
+}
+fieldset:hover{
+    cursor: pointer;
+    background: linear-gradient(#ff00ff 10%,#9900ff 30%,#002fff 100%);
+}
+@media screen and (max-width:800px){
+    .column{
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:600px){
+    .column{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

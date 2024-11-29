@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(50, 0, 100);
+}
+img{
+    margin: 10px;
+}
+.header{
+    background-color: rgb(0, 0, 0);
+}
+.header li{
+    display: block;
+    padding: 20px;
+    float: left;
+    border-radius: 10px;
+}
+.header ul{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+    overflow: hidden;
+}
+.header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.header li:hover{
+    background: linear-gradient(#ff00ff 10%,#9900ff 30%,#002fff 100%);
+    cursor: pointer;
+}
+.main{
+    background-image: url(https://avatars.mds.yandex.net/i?id=19ed4bda84334171aa7490ca86484a31-5349329-images-thumbs&n=13);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 25%;
+}
+.main p{
+    font-size: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.main fieldset{
+    border-radius: 50px;
+    background: black;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+.main fieldset :hover{
+    background: linear-gradient(#ff00ff 10%,#9900ff 30%,#002fff 100%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.main fieldset a{
+    text-decoration: none;
+}
+.main fieldset h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+}
+@media screen and (max-width:800px){
+    .column{
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:600px){
+    .column{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
